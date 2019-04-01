@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  JJVideoManager
+//  JJVideoManagerKit
 //
-//  Created by lujunjie on 2019/3/27.
+//  Created by lujunjie on 2019/4/1.
 //  Copyright © 2019 JJ. All rights reserved.
 //
 
@@ -16,7 +16,6 @@
 @end
 
 @implementation ViewController
-
 - (NSString *)getOutputPath
 {
     NSDateFormatter *formater = [[NSDateFormatter alloc] init];
@@ -55,7 +54,7 @@
     options.networkAccessAllowed = YES;
     options.progressHandler =  ^(double progress,NSError *error,BOOL* stop, NSDictionary* dict) {};
     [[PHImageManager defaultManager] requestAVAssetForVideo:phAsset options:options resultHandler:^(AVAsset* avasset, AVAudioMix* audioMix, NSDictionary* info){
-
+        
         //NSString *videoPath = [((AVURLAsset*)avasset).URL absoluteString];
         
         JJVideoCompression *compression = [JJVideoCompression sharedCompression];
@@ -92,5 +91,4 @@
     }];
     
 }
-
 @end

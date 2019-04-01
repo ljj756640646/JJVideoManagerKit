@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  JJVideoManager
+//  JJVideoManagerKit
 //
-//  Created by lujunjie on 2019/3/27.
+//  Created by lujunjie on 2019/4/1.
 //  Copyright © 2019 JJ. All rights reserved.
 //
 

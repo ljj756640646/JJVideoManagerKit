@@ -18,22 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH7-2h-1bc">
-                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9mW-rN-uXL"/>
-                                    <constraint firstAttribute="height" constant="100" id="JTz-jP-9bG"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O2-Bq-rYn">
+                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
                                 <state key="normal" title="open"/>
                                 <connections>
-                                    <action selector="OpenAction:" destination="BYZ-38-t0r" eventType="touchDown" id="FfR-jq-XIg"/>
+                                    <action selector="OpenAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2N-Ar-dWa"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GH7-2h-1bc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AJQ-np-hYf"/>
-                            <constraint firstItem="GH7-2h-1bc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o33-uN-6y3"/>
+                            <constraint firstItem="6O2-Bq-rYn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BBO-fN-Nq3"/>
+                            <constraint firstItem="6O2-Bq-rYn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNG-Mh-Qm0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

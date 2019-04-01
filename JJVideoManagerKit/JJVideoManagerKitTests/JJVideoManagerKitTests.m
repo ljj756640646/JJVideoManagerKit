@@ -1,18 +1,18 @@
 //
-//  JJJVideoManagerTests.m
-//  JJVideoManagerTests
+//  JJVideoManagerKitTests.m
+//  JJVideoManagerKitTests
 //
-//  Created by lujunjie on 2019/3/27.
+//  Created by lujunjie on 2019/4/1.
 //  Copyright © 2019 JJ. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface JJVideoManagerTests : XCTestCase
+@interface JJVideoManagerKitTests : XCTestCase
 
 @end
 
-@implementation JJVideoManagerTests
+@implementation JJVideoManagerKitTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
