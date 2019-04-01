@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JJVideoManagerKit'
-s.version = '1.0'
+s.version = '1.0.1'
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.summary = 'JJVideoManagerKit is  Video compression'
 s.homepage = 'https://github.com/ljj756640646/JJVideoManagerKit'
