@@ -2,6 +2,11 @@
 
 JJVideoManagerKit是一个视频压缩压缩工具，支持音频压缩、视频压缩
 ，可以设置具体压缩参数
+
+cocosPod安装
+
+pod 'JJVideoManagerKit', '~> 1.0.2'
+
 使用方法：
         
 
