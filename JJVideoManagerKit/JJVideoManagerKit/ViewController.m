@@ -57,25 +57,25 @@
         
         //NSString *videoPath = [((AVURLAsset*)avasset).URL absoluteString];
         
-        JJVideoCompression *compression = [JJVideoCompression sharedCompression];
-        compression.inputURL = ((AVURLAsset*)avasset).URL;
-        compression.exportURL = [NSURL fileURLWithPath:[self getOutputPath]];
+        JJVideoCompression *compression = [[JJVideoCompression alloc]init]; // 创建对象
+        compression.inputURL = ((AVURLAsset*)avasset).URL; // 视频输入路径
+        compression.exportURL = [NSURL fileURLWithPath:[self getOutputPath]]; // 视频输出路径
         
         
-        JJAudioConfigurations audioConfigurations;
-        audioConfigurations.samplerate = JJAudioSampleRate_11025Hz;
-        audioConfigurations.bitrate = JJAudioBitRate_32Kbps;
-        audioConfigurations.numOfChannels = 1;
-        audioConfigurations.frameSize = 8;
+        JJAudioConfigurations audioConfigurations;// 音频压缩配置
+        audioConfigurations.samplerate = JJAudioSampleRate_11025Hz; // 采样率
+        audioConfigurations.bitrate = JJAudioBitRate_32Kbps;// 音频的码率
+        audioConfigurations.numOfChannels = 1;// 声道数
+        audioConfigurations.frameSize = 8; // 采样深度
         
         compression.audioConfigurations = audioConfigurations;
         
         
         JJVideoConfigurations videoConfigurations;
         
-        videoConfigurations.fps = 15;
-        videoConfigurations.videoBitRate = JJ_VIDEO_BITRATE_LOW;
-        videoConfigurations.videoResolution =  JJ_VIDEO_RESOLUTION_SUPER;
+        videoConfigurations.fps = 15; // 帧率 一秒中有多少帧
+        videoConfigurations.videoBitRate = JJ_VIDEO_BITRATE_LOW; // 视频质量 码率
+        videoConfigurations.videoResolution =  JJ_VIDEO_RESOLUTION_SUPER; //视频尺寸
         
         compression.videoConfigurations = videoConfigurations;
         

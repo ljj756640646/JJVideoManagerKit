@@ -1,0 +1,6 @@
+module Pods_JJVideoManagerKit [system] {
+  umbrella header "Pods-JJVideoManagerKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,16 +15,22 @@
 
 @implementation JJVideoCompression
 
-
-+ (instancetype)sharedCompression
+- (instancetype)init
 {
-    static JJVideoCompression *_selfObject;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _selfObject = [[self alloc] init];
-    });
-    return _selfObject;
+    self = [super init];
+    if (self) {
+        _audioConfigurations.samplerate = JJAudioSampleRate_11025Hz;
+        _audioConfigurations.bitrate = JJAudioBitRate_32Kbps;
+        _audioConfigurations.numOfChannels = 1;
+        _audioConfigurations.frameSize = 8;
+        
+        _videoConfigurations.fps = 15;
+        _videoConfigurations.videoBitRate = JJ_VIDEO_BITRATE_LOW;
+        _videoConfigurations.videoResolution =  JJ_VIDEO_RESOLUTION_SUPER;
+    }
+    return self;
 }
+
 - (void)startCompressionWithCompletionHandler:(void (^)(JJVideoCompressionState State))handler
 {
     NSParameterAssert(handler != nil);

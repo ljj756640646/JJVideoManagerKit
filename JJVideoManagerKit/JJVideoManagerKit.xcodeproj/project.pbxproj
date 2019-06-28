@@ -58,6 +58,7 @@
 		9643A14B22519E4C0007FE26 /* JJAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAVAssetExportSession.m; sourceTree = "<group>"; };
 		9643A14C22519E4C0007FE26 /* JJVideoCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJVideoCompression.h; sourceTree = "<group>"; };
 		9643A14D22519E4C0007FE26 /* JJVideoCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJVideoCompression.m; sourceTree = "<group>"; };
+		96D8D5F82254A82D0087DF92 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		9E0DAC326884589FBCDE3801 /* Pods-JJVideoManagerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJVideoManagerKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJVideoManagerKit/Pods-JJVideoManagerKit.release.xcconfig"; sourceTree = "<group>"; };
 		A882536B7F55AE0B4670CA43 /* Pods-JJVideoManagerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJVideoManagerKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJVideoManagerKit/Pods-JJVideoManagerKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C891BF83422BCF9AAA8E2F79 /* libPods-JJVideoManagerKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJVideoManagerKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +170,7 @@
 		D5249CC799C6BF0C13EA55A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96D8D5F82254A82D0087DF92 /* Metal.framework */,
 				C891BF83422BCF9AAA8E2F79 /* libPods-JJVideoManagerKit.a */,
 			);
 			name = Frameworks;
@@ -532,7 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF8UV85KVW;
 				INFOPLIST_FILE = JJVideoManagerKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF8UV85KVW;
 				INFOPLIST_FILE = JJVideoManagerKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

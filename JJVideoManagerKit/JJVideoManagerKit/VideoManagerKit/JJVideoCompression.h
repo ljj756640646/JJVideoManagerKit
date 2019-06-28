@@ -106,11 +106,6 @@ NS_ASSUME_NONNULL_BEGIN
  * The settings used for encoding the audio track.
  */
 @property (nonatomic, assign) JJAudioConfigurations audioConfigurations;
-/**
- Returns global shared instance.
- @return  The singleton JJVideoCompression instance.
- */
-+ (instancetype)sharedCompression;
 
 - (void)startCompressionWithCompletionHandler:(void (^)(JJVideoCompressionState State))handler;
 
