@@ -1,8 +1,7 @@
 # JJVideoManagerKit
 
-JJVideoManagerKit是一个视频压缩压缩工具
-支持音频压缩、视频压缩
-可以设置具体压缩参数
+JJVideoManagerKit是一个视频压缩压缩工具，支持音频压缩、视频压缩
+，可以设置具体压缩参数
 使用方法：
         
 
