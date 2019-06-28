@@ -4,6 +4,8 @@ iOS 视频压缩压缩工具
 支持音频压缩、视频压缩可以设置具体参数
 
 使用方法：
+        
+
         JJVideoCompression *compression = [[JJVideoCompression alloc]init]; // 创建对象
         compression.inputURL = ((AVURLAsset*)avasset).URL; // 视频输入路径
         compression.exportURL = [NSURL fileURLWithPath:[self getOutputPath]]; // 视频输出路径
