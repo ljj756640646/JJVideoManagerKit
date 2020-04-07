@@ -45,5 +45,7 @@
 	<string>视频权限</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key></key>
+	<string></string>
 </dict>
 </plist>

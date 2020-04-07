@@ -54,7 +54,7 @@
     self.shouldOptimizeForNetworkUse = YES;
     
     NSMutableDictionary *videoParameter = [NSMutableDictionary dictionary];
-    [videoParameter setObject:AVVideoCodecH264 forKey:AVVideoCodecKey];
+    [videoParameter setObject:AVVideoCodecTypeH264 forKey:AVVideoCodecKey];
     [videoParameter setObject:@(self.height) forKey:AVVideoHeightKey];
     [videoParameter setObject:@(self.width) forKey:AVVideoWidthKey];
     
@@ -62,6 +62,7 @@
     NSMutableDictionary *propertiesParameter = [NSMutableDictionary dictionary];
     [propertiesParameter setObject:@(self.videoConfigurations.fps) forKey:AVVideoAverageNonDroppableFrameRateKey];
     [propertiesParameter setObject:AVVideoProfileLevelH264MainAutoLevel forKey:AVVideoProfileLevelKey];
+//    [propertiesParameter setObject:AVVideoProfileLevelH264BaselineAutoLevel forKey:AVVideoProfileLevelKey];
     if (videoBitRate > configurationsBitRate) {
         [propertiesParameter setObject:@(configurationsBitRate) forKey:AVVideoAverageBitRateKey];
     }
@@ -92,6 +93,8 @@
             handler(JJ_VIDEO_STATE_FAILURE);
             // 失败
         }
+        
+        [self cancelExport];
     }];
 }
 
